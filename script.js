@@ -2,41 +2,56 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  var lower = "abcdefghijklmnopqrstuvwxyz";
-  var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var number = "1234567890";
-  var special = "!@£$%^&*()";
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numberC = "1234567890";
+  var specialC = "!@£$%^&*()_+={}[]:|;?><,./~`";
 
-  var finalPasswordCharactorOptions = ""; 
-
+  var finalPasswordCharacterOptions = ""; 
+  var finalPassword = "";
+  
 
   var length = parseInt(prompt("How long would you like password between 8 and 128"))
-  if(length < 8){
-    alert("the password need to be a minimum of 8 chars");
+  if(isNaN(length)){
+    alert("Please insert a valid Number!")
     return;
   }
   if(length > 128){
     alert("the password can't be longer than 128 chars");
     return;
   }
+if(length < 8){
+    alert("the password need to be a minimum of 8 chars");
+    return;
+  }
+  
+
   var wantsLowerCase = confirm("Do you want lower case letters?");
   var wantsUpperCase = confirm("Do you want upper case letters?");
   var wantsNumber = confirm("Do you want Number?"); 
   var wantsSpecial = confirm("Do you want Special?");
+
+  
   if(wantsLowerCase === true){
-    finalPasswordCharactorOptions += lower;
+
+    finalPasswordCharacterOptions += lowerCase;
   } 
   if(wantsUpperCase === true){
-    finalPasswordCharactorOptions += upper;
+    finalPasswordCharacterOptions += upperCase;
   } 
   if(wantsNumber === true){
-    finalPasswordCharactorOptions += number;
+    finalPasswordCharacterOptions += numberC;
   } 
   if(wantsSpecial === true){
-    finalPasswordCharactorOptions += special;
+    finalPasswordCharacterOptions += specialC;
   } 
 
-  return finalPasswordCharactorOptions;
+  for(var i = 0; i <= length; i++){
+    var randomCharacter = Math.floor(Math.random() * finalPasswordCharacterOptions.length)
+    finalPassword += finalPasswordCharacterOptions[randomCharacter]
+  }
+
+  return finalPassword;
 }
 
 
