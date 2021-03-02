@@ -31,8 +31,26 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 60px;
   color: hsl(0, 0%, 0%);
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.5em;
+}
+
+.title h1 {
+  color: black;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 .card {
@@ -79,6 +97,7 @@ header {
   clear: both;
 }
 
+
 .btn {
   border: none;
   background-color: rgba(255, 0, 0, 0.883);
@@ -107,7 +126,6 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;

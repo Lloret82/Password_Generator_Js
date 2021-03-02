@@ -11,17 +11,17 @@ function generatePassword(){
   var finalPassword = "";
   
 
-  var length = parseInt(prompt("How long would you like password between 8 and 128"))
+  var length = parseInt(prompt("How long would you like your password, between 8 and 128"))
   if(isNaN(length)){
     alert("Please insert a valid Number!")
     return;
   }
   if(length > 128){
-    alert("the password can't be longer than 128 chars");
+    alert("the password can't be longer than 128 characters");
     return;
   }
 if(length < 8){
-    alert("the password need to be a minimum of 8 chars");
+    alert("the password need to be a minimum of 8 characters");
     return;
   }
   
@@ -29,7 +29,7 @@ if(length < 8){
   var wantsLowerCase = confirm("Do you want lower case letters?");
   var wantsUpperCase = confirm("Do you want upper case letters?");
   var wantsNumber = confirm("Do you want Number?"); 
-  var wantsSpecial = confirm("Do you want Special?");
+  var wantsSpecial = confirm("Do you want Special characters?");
 
   
   if(wantsLowerCase === true){
@@ -46,7 +46,7 @@ if(length < 8){
     finalPasswordCharacterOptions += specialC;
   } 
 
-  for(var i = 0; i <= length; i++){
+  for(var i = 0; i <= length -1; i++){
     var randomCharacter = Math.floor(Math.random() * finalPasswordCharacterOptions.length)
     finalPassword += finalPasswordCharacterOptions[randomCharacter]
   }
