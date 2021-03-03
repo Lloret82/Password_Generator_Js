@@ -6,6 +6,8 @@ function generatePassword() {
   let special = "!@£$%^&*()_+={}[]:|;?><,./~`";
   let finalPasswordCharacterOptions = "";
   let finalPassword = "";
+
+  
   // added a parseInt function to transform the user input string and parse into an integer
   let length = parseInt(prompt("How long would you like your password, between 8 and 128"))
   // added a validation for the user input, lenght and isNaN so the user can't input not number characters and lenght outside the parameters
@@ -73,3 +75,10 @@ function writePassword() {
 // Add event listener to generate button
 let generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
+
+// added a button to copy the password to the clipboard
+function copy(){
+  let copy = document.querySelector("textarea").select();
+  document.execCommand("Copy");
+  alert("Password copied to clipboard!");
+}
