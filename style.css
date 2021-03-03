@@ -178,10 +178,12 @@ button[disabled] {
     padding: 10px 15px;
   }
 
-  /* .title h1{
+  .title h1{
     text-align: center;
-
-  } */
+    font-size: 0.5em;
+    padding: 10px;
+    
+  }
 
   #password {
     font-size: 1rem;
@@ -196,5 +198,11 @@ button[disabled] {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+  }
+  .title h1{
+    text-align: center;
+    font-size: 0.5em;
+    padding: 10px;
+    
   }
 }
