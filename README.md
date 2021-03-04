@@ -36,8 +36,8 @@ The end result of the application provides the user a new and secure password. W
 
 ## Screenshots
 
- ![Code](/assets/Screenshots/Screenshot_3.png)
- ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
+ ![Code](/code.png)
+ ![Live page Picture](/screen.png)
 
 
 ## Installation
