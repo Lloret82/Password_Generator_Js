@@ -52,7 +52,9 @@ header {
   from { width: 0 }
   to { width: 100% }
 }
-
+.sec-title{
+  text-align: center;
+}
 .card {
   /* background-color: hsla(0, 0%, 13%, 0.692); */
   border-radius: 5px;
