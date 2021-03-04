@@ -21,7 +21,7 @@ Character Type (user must select at least one): Special characters Numeric chara
 
 The end result of the application provides the user a new and secure password. Without a set of prompts, the user would not be able to follow any directions towards generating a new password.
 
-## What technology been used
+## What technology has been used
 * HTML
 * CSS
 * Javascript
