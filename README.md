@@ -1,92 +1,76 @@
-# 03 JavaScript: Password Generator
+# Lloret82 Personal Portfolio
 
-## Your Task
+## Table of Contents
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+* [Description](#Description)
+* [Links](#links)
+* [Screenshots](#Screenshots)
+* [Installation](#installation)
+* [Usage](#Usage)
+* [Licence](#Licence)
+* [Badge](#Badge)
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Description
 
-## User Story
+#### Password Generator
+This application generates a random password based on user-selected criteria. The user will be prompted to choose from the following:
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+Length of password (must contain at least 8 characters but less than 128)
 
-## Acceptance Criteria
+Character Type (user must select at least one): Special characters Numeric characters Lowercase characters Uppercase characters
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+The end result of the application provides the user a new and secure password. Without a set of prompts, the user would not be able to follow any directions towards generating a new password.
 
-## Mock-Up
+## What technology been used
+* HTML
+* CSS
+* Javascript
 
-The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+## Links
 
-## Grading Requirements
+* [Code Repository](https://github.com/Lloret82/Password_Generator_Js)
+* [Live website](https://lloret82.github.io/Password_Generator_Js/)
 
-This homework is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+## Screenshots
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+ ![Code](/assets/Screenshots/Screenshot_3.png)
+ ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
 
-### Deployment: 32%
 
-* Application deployed at live URL.
+## Installation
 
-* Application loads with no errors.
+#### _Installation not needed_
 
-* Application GitHub URL submitted.
+## Usage
 
-* GitHub repository that contains application code.
+#### _The page can be viewed in both desktop and mobile version_
 
-### Application Quality: 15%
 
-* Application user experience is intuitive and easy to navigate.
 
-* Application user interface style is clean and polished.
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+## Licence
 
-### Repository Quality: 13%
+#### Copyright (c) [2021] [Andrea Di Bartolomeo]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE_
 
-* Repository has a unique name.
+## Badge
+![badge](https://img.shields.io/amo/rating/5?style=plastic)
+![badge](https://img.shields.io/github/release-date/Lloret82/Horiseon_Code_Refactor_Homework_1)
 
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
