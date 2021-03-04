@@ -30,7 +30,7 @@ function generatePassword() {
   let wantsSpecial = confirm("Do you want Special characters?");
   // added a while loop to validate that at least one option is selected
   while (wantsLowerCase == false && wantsUpperCase == false && wantsNumber == false && wantsSpecial == false) {
-    alert("Please select one type of character");
+    alert("Please select one type of character at least");
     wantsLowerCase = confirm("Do you want lower case letters?");
     wantsUpperCase = confirm("Do you want upper case letters?");
     wantsNumber = confirm("Do you want Number?");
