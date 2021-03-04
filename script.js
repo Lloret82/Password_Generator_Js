@@ -13,7 +13,7 @@ function generatePassword() {
   // added a validation for the user input, lenght and isNaN so the user can't input not number characters and lenght outside the parameters
   if (isNaN(length)) {
     alert("Please insert a valid Number!")
-    return;
+    return "Try Again!";
   }
   if (length > 128) {
     alert("the password can't be longer than 128 characters");
